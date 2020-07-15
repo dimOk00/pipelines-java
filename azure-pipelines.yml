@@ -29,5 +29,4 @@ steps:
     resourceGroupName: 'myapp-rg'
     location: 'West Europe'
     templateLocation: 'Linked artifact'
-    csmFile: 'https://aka.ms/sampletemplate'
     deploymentMode: 'Incremental'
