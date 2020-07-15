@@ -20,13 +20,3 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: AzureResourceManagerTemplateDeployment@3
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Azure for Students(d8a70770-0dc0-43b6-a006-252daf3ead76)'
-    subscriptionId: 'd8a70770-0dc0-43b6-a006-252daf3ead76'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'myapp-rg'
-    location: 'West Europe'
-    templateLocation: 'Linked artifact'
-    deploymentMode: 'Incremental'
